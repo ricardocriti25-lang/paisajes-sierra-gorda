@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #f4f7f2;
+  color: #243024;
+}
+
+.pagina {
+  min-height: 100vh;
+}
+
+.encabezado {
+  background: linear-gradient(135deg, #2f5d3a, #6f8f4e);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.encabezado h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.encabezado p {
+  font-size: 18px;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.tarjeta {
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-8px);
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.contenido {
+  padding: 22px;
+}
+
+.contenido h2 {
+  color: #2f5d3a;
+  margin-bottom: 12px;
+}
+
+.contenido p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.contenido button {
+  background-color: #48784f;
+  color: white;
+  border: none;
+  padding: 11px 20px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.contenido button:hover {
+  background-color: #2f5d3a;
+}
+
+.pie {
+  background-color: #263d2a;
+  color: white;
+  text-align: center;
+  padding: 22px;
+  margin-top: 50px;
+}
+
+@media (max-width: 900px) {
+  .contenedor {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+  }
+
+  .encabezado h1 {
+    font-size: 32px;
+  }
+}
